@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  background-color: #218380;
+  height: 4rem;
+}
+.header__high-score-btn,
+.header__timer-container {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+}
+.header__timer {
+  width: 1.5rem;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+.wrapper {
+  width: 750px;
+  height: 350px;
+
+  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 15px 40px;
+  box-sizing: border-box;
+}
+.wrapper__heading,
+.wrapper__para {
+  display: inline-block;
+}
+.wrapper__btn {
+  padding: 10px;
+  background-color: #218380;
+  border: none;
+  color: #fff;
+  border-radius: 7px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.fa-hand-point-left:after {
+  content: "\f0a5";
+}
+.fa-hand-point-left:before {
+  content: "" !important;
+}
+.high-score-container {
+  margin: 80px auto;
+  padding: 25px 30px;
+  display: none;
+  min-width: 250px;
+  text-align: center;
+}
+.high-scores {
+  height: 60px;
+  overflow-y: scroll;
+  margin: 5px;
+}
+
+.quiz__border-shadow {
+  box-shadow: 10px 6px 5px rgba(169, 169, 169, 0.747);
+  border: 2px solid rgba(169, 169, 169, 0.63);
+  border-radius: 30px;
+}
+.question-header {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.options-btn {
+  background-color: #218380;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin: 10px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1rem;
+  padding: 15px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.q-o-container {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  flex-direction: column;
+  padding: 30px;
+}
+.score__board {
+  width: 600px;
+  height: 380px;
+  padding: 30px 80px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+}
+.score__board-name-inp {
+  width: 100px;
+  height: 28px;
+}
+@media screen and (max-width: 360px) {
+  .wrapper {
+    height: 400px;
+  }
+}
